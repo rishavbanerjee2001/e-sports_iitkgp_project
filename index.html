@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Countdown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Gamers Hub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/About_Me/about.html">About Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="countdown-container">
+            <h1>Next Valorant Tournament Begins In:</h1>
+            <div class="countdown">
+                <div><span id="days"></span> Days</div>
+                <div><span id="hours"></span> Hours</div>
+                <div><span id="minutes"></span> Minutes</div>
+                <div><span id="seconds"></span> Seconds</div>
+            </div>
+        </section>
+
+        <!-- Photo Container -->
+        <section class="photo-container">
+            <img src="Valorant.jpeg" alt="Game Themed Photo">
+        </section>
+    </main>
+    <footer class="footer">
+        <h1><a href="http://playvalorant.com">Link to Main Valorant Page</a></h1>
+    </footer>
+    
+    <!-- POPUP -->
+
+    <div class="wrapper">
+        <i class="fa-solid fa-xmark" onclick="closeFunc()"></i>
+        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="content">
+            <header>Become A Subscriber</header>
+            <p>This is our gaming website where we host different games every week for our memebers to play !</p>
+        </div>
+        
+            <div class="field">
+                <input type="text" name="email" placeholder="Email Address" id="email" required>
+            </div>
+            <div class="field btn" id="subscribeBtn">
+                <input type="submit" value="Subscribe">
+            </div>
+        
+        <div class="text">We do not share your information</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
